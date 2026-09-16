@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: pink;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .content h1 {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .container-img {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            border-radius: 20px;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .card a {
+            margin-top: 10px;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        footer {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 40px;
+            border-top: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <h1>Online Shopping!</h1>
+        <div class="container-img">
+            <div class="card">
+                <img class="img1" src="https://static.wixstatic.com/media/0862a1_baefc9d1d9a94ee5aab8fdbc5c5b506b~mv2.jpg/v1/fill/w_553,h_553,al_c,lg_1,q_80,enc_auto/0862a1_baefc9d1d9a94ee5aab8fdbc5c5b506b~mv2.jpg" alt="Lazada">
+                <a href="https://www.lazada.com" target="_blank">@lazada.com</a>
+            </div>
+            <div class="card">
+                <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptwOHnvgwb07fGVXInoQgZKo2atFaYXLM-g&s" alt="Shopee">
+                <a href="https://www.shopee.com" target="_blank">@shopee.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; wil 2026</p>
+    </footer>
+</body>
+</html>
